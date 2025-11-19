@@ -14,8 +14,6 @@
     "@react-native-community/netinfo": "^11.4.1",
     "@react-native/new-app-screen": "0.82.1",
     "@reduxjs/toolkit": "^2.10.1",
-    "@reown/walletkit": "^1.4.1",
-    "@walletconnect/react-native-compat": "^2.23.0",
     "ethers": "^6.15.0",
     "fast-text-encoding": "^1.0.6",
     "react": "19.1.1",
