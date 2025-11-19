@@ -2,6 +2,14 @@
 
 Simple Sepolia wallet with create wallet, import wallet with private key, send Sepolia ETH transactions, view transaction history.
 
+# Gallery
+
+https://github.com/user-attachments/assets/aba7c7cb-f7f9-4a84-a543-2aa992d153e7
+
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -15,7 +23,7 @@ First, you will need to run **Metro**, the JavaScript build tool for React Nativ
 To start the Metro dev server, run the following command from the root of your React Native project:
 
 ```sh
-# Using npm
+# Using npm      
 npm start
 
 # OR using Yarn
