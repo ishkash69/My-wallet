@@ -12,6 +12,7 @@ let currentRpcIndex = 0;
 // Get Sepolia provider
 export const getSepoliaProvider = (): ethers.JsonRpcProvider => {
   const rpcUrl = SEPOLIA_RPC_URLS[currentRpcIndex];
+  console.log('Using RPC:', rpcUrl);
   return new ethers.JsonRpcProvider(rpcUrl);
 };
 
@@ -29,8 +30,10 @@ export const fetchBalance = async (address: string): Promise<string> => {
     try {
       const provider = getSepoliaProvider();
       const balance = await provider.getBalance(address);
+      console.log('Balance:', ethers.formatEther(balance));
       return ethers.formatEther(balance);
     } catch (error: any) {
+      console.log('Error fetching balance:', error);
       lastError = error;
       rotateRpc();
     }

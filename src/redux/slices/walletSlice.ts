@@ -33,6 +33,7 @@ const walletSlice = createSlice({
   reducers: {
     // Wallet actions
     setWallet: (state, action: PayloadAction<{ address: string; privateKey: string }>) => {
+      console.log('setWallet>>>>>', action.payload);
       state.address = action.payload.address;
       state.privateKey = action.payload.privateKey;
       state.error = null;

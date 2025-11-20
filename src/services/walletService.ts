@@ -11,6 +11,7 @@ export interface WalletData {
 // Create new wallet
 export const createNewWallet = (): WalletData => {
   const wallet = ethers.Wallet.createRandom();
+  console.log('wallet', wallet?.address);
   return {
     address: wallet.address,
     privateKey: wallet.privateKey,

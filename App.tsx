@@ -83,6 +83,7 @@ function AppContent() {
     if (address) {
       try {
         const newBalance = await fetchBalance(address);
+        console.log('New balance:', newBalance);
         dispatch(setBalance(newBalance));
       } catch (error) {
         console.error('Error fetching balance:', error);
